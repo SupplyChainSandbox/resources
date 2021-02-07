@@ -1,7 +1,5 @@
 # SupplychainSandbox - Information Resources
 
-[![Gitter](https://badges.gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame.svg)](https://gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 
 ## Quick links
 
@@ -25,7 +23,7 @@ In a just-in-time-delivery world, cybersecurity disruptions to traditional logis
 
 ## Communications
 
-Anyone is welcome to join our open discussions of Supplychain Sandbox Classic Game and share ideas on how to improve the concept. Much of the work of the group happens outside of SupplychainSandbox meetings and we encourage project teams to share progress updates or post questions in these channels:
+Anyone is welcome to join our open discussions of Supplychain Sandbox Information Resources and share ideas on how to improve the concept. Much of the work of the group happens outside of SupplychainSandbox meetings and we encourage project teams to share progress updates or post questions in these channels:
 
 * [Gitter Group](https://gitter.im/SupplyChainSandbox/SupplychainSandbox-Resources)
 
