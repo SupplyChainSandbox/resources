@@ -1,6 +1,6 @@
 # SupplychainSandbox - Information Resources
 
-[![Gitter](https://badges.gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame.svg)](https://gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame.svg)](https://gitter.im/SupplyChainSandbox/SupplychainSandbox-ClassicGame?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Join the chat at https://gitter.im/SupplyChainSandbox/SupplyChainSandbox-Resources](https://badges.gitter.im/SupplyChainSandbox/SupplyChainSandbox-Resources.svg)](https://gitter.im/SupplyChainSandbox/SupplyChainSandbox-Resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 ## Quick links
