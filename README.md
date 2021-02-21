@@ -1,63 +1,81 @@
-# SupplychainSandbox - Information Resources
+# Airtable listing theme for Gatsby
 
+### Gatsby starter theme integrated with [Airtable](https://airtable.com/)
 
-## Quick links
+## Demo
 
-- [Meeting Information](#meeting-times)
-- [Gitter Information](#communications)
-- [Members](#members)
+Live demo is available at: https://gatsby-airtable-listing.netlify.com/
 
-## Objective
+## Screenshot
 
-The SupplychainSanbox Information Resources group is looking to educate the masses about supply chain integrity through a fun and educational experience. 
+![The home page](screenshot.png?raw=true)
 
-## Background
+## Features
 
-The Supply Chain Sandbox is an interactive environment, with hands on games and demonstrations that illustrate supply chain issues, as well as concepts and approaches to manage them more effectively. Learn concepts like the Software Bill of Materials, a framework for pinpointing cyber supply chain risk, and other principles - all while having more fun than you thought you could at a cybersecurity conference!
+- Integration with [Airtable](https://airtable.com/)
+- Item details displayed in a modal with navigation (previous / next)
+- Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
+- Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
+- Responsive design (desktop / mobile)
+- Generic newsletter form
+- Dark Mode support 🌙
 
-## Vision
+## 🚀 Getting started
 
-Supply chain management is a critical factor of business success. As software increasingly drives business value, organizations can achieve greater efficiency, agility, and effectiveness - as well as security - by applying similar principles to their cyber supply chains. Vulnerabilities in components such as processors, network stacks, and platform dependencies have shown that supply chain visibility is shallow, while risk runs deep.
+Install [Node package manager (NPM)](https://nodejs.org/) (if you haven't already).
 
-In a just-in-time-delivery world, cybersecurity disruptions to traditional logistics and planning. Not Petya halted operations for shipping companies worldwide, providing a vivid illustration of how dependent organizations have become on their partners’ cybersecurity for physical, as well as digital, assets.
+### Get the source code and install dependencies.
 
-## Communications
+```
+$ git clone git@github.com:wkocjan/gatsby-airtable-listing.git
+$ npm install
+```
 
-Anyone is welcome to join our open discussions of Supplychain Sandbox Information Resources and share ideas on how to improve the concept. Much of the work of the group happens outside of SupplychainSandbox meetings and we encourage project teams to share progress updates or post questions in these channels:
+### Create Airtable base
 
-* [Gitter Group](https://gitter.im/SupplyChainSandbox/SupplychainSandbox-Resources)
+To use this project you have to have a Airtable account.
 
-## Meeting times
+Once you have it, go to [this base](https://airtable.com/shrlYuICEwEdAUir3) and click `Copy base` button located in the top right corner.
 
-To Be Determined
+Included columns:
 
-## Gatherings
+- `name` (single line text)
+- `slug` (single line text, should be unique)
+- `summary` (single line text)
+- `image` (attachment)
+- `descrition` (long text)
+- `country` (single select)
+- `tags` (multiple select)
+- `url` (single line text)
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/SupplyChainSandbox/resources/issues/new) for an event and add to list below:
+### Set up Airtable API keys
 
-* RSA Conference- May 17-20, 2021 
+Copy included `.env.example` file to `.env` and fill it with your unique values:
 
+```
+AIRTABLE_API_KEY=""
+AIRTABLE_BASE_ID=""
+AIRTABLE_TABLE_NAME="Destinations"
+```
 
-## Related groups
+You can find your API key and Base ID by clicking "Help" and then "API Documentation". Table name in the example is "Destinations" (case sensitive name).
 
+You're now ready to go. If you want to customize the Airtable base, please refer to [`gatsby-source-airtable` plugin documentation](https://www.gatsbyjs.org/packages/gatsby-source-airtable/).
 
-[Supply Chain Block Game](https://github.com/SupplyChainSandbox/supplychaingame)
+### Data update
 
-[Supply Chain Classic Game](https://github.com/SupplyChainSandbox/classicgame)
+The data from Airtable **does not** update automatically, even when you're running the `develop` process.
 
-[Supply Chain Trivia](https://github.com/SupplyChainSandbox/trivia)
+If you modified any data in your Airtable base, please be sure to restart the development process, so the new data can be downloaded.
 
-[SBOM (Sipping)](https://github.com/SupplyChainSandbox/sipping)
+## Crucial Commands
 
-[Supply Chain CTF](https://github.com/SupplyChainSandbox/SupplyChainCTF)
+This project comes with a few handy commands for linting and code fixing. The most important ones are the ones to develop and ship code. You can find the most important commands below.
 
+#### `gatsby develop`
 
-## History
+Run in the project locally.
 
-Future section
+#### `gatsby build`
 
-## Members
-
-### SupplychainSandbox- Information Resources members
-
-*David Batz  ([@DavidBatz](https://github.com/DavidBatz))
+Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
